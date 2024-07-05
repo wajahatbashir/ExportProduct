@@ -1,0 +1,18 @@
+{
+    "name": "wb/module-export-product",
+    "description": "Magento 2 module for exporting products data",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "require": {
+        "php": "~7.3.0||~7.4.0",
+        "magento/framework": "*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "WB\\ExportProduct\\": ""
+        }
+    }
+}

@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Ui/etc/ui_configuration.xsd">
+    <columns name="product_columns">
+        <selectionsColumn name="ids"/>
+        <column name="entity_id">
+            <settings>
+                <filter>text</filter>
+                <label translate="true">ID</label>
+            </settings>
+        </column>
+        <column name="name">
+            <settings>
+                <filter>text</filter>
+                <label translate="true">Name</label>
+            </settings>
+        </column>
+        <column name="sku">
+            <settings>
+                <filter>text</filter>
+                <label translate="true">SKU</label>
+            </settings>
+        </column>
+        <column name="price">
+            <settings>
+                <filter>text</filter>
+                <label translate="true">Price</label>
+            </settings>
+        </column>
+        <column name="qty">
+            <settings>
+                <filter>text</filter>
+                <label translate="true">Quantity</label>
+            </settings>
+        </column>
+        <column name="status">
+            <settings>
+                <filter>text</filter>
+                <label translate="true">Status</label>
+            </settings>
+        </column>
+        <column name="store">
+            <settings>
+                <filter>text</filter>
+                <label translate="true">Store</label>
+            </settings>
+        </column>
+        <column name="image">
+            <settings>
+                <filter>text</filter>
+                <label translate="true">Base Image URL</label>
+            </settings>
+        </column>
+        <column name="visibility">
+            <settings>
+                <filter>text</filter>
+                <label translate="true">Visibility</label>
+            </settings>
+        </column>
+        <column name="manufacturer">
+            <settings>
+                <filter>text</filter>
+                <label translate="true">Manufacturer</label>
+            </settings>
+        </column>
+    </columns>
+    <listingToolbar name="listing_top">
+        <buttons>
+            <button name="export_csv">
+                <settings>
+                    <title translate="true">Export to CSV</title>
+                    <url path="exportproduct/export/csv"/>
+                    <class>primary</class>
+                </settings>
+            </button>
+            <button name="export_excel">
+                <settings>
+                    <title translate="true">Export to Excel</title>
+                    <url path="exportproduct/export/excel"/>
+                    <class>primary</class>
+                </settings>
+            </button>
+        </buttons>
+    </listingToolbar>
+</listing>

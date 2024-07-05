@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Menu/etc/menu.xsd">
+    <menu>
+        <add id="WB_ExportProduct::main_menu" title="WB Export Products" module="WB_ExportProduct" sortOrder="100" parent="Magento_Catalog::catalog_products" action="exportproduct/index/index" resource="WB_ExportProduct::main_menu"/>
+    </menu>
+</config>
