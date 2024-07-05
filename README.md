@@ -58,7 +58,7 @@ This module is compatible with Magento 2.3 and Magento 2.4.
 
 ## Support
 
-For any issues or feature requests, please open an issue on the [GitHub repository](https://github.com/<your-username>/Magento2-ExportProduct).
+For any issues or feature requests, please open an issue on the [GitHub repository](https://github.com/wajahatbashir/Magento2-ExportProduct).
 
 ## License
 
