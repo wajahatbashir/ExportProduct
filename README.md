@@ -19,7 +19,7 @@ This module is compatible with Magento 2.3 and Magento 2.4.
 1. **Clone the repository into your Magento 2 `app/code` directory:**
 
     ```bash
-    git clone https://github.com/<your-username>/Magento2-ExportProduct.git app/code/WB/ExportProduct
+    git clone https://github.com/wajahatbashir/Magento2-ExportProduct.git app/code/WB/ExportProduct
     ```
 
 2. **Enable the module:**
