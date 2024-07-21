@@ -64,21 +64,31 @@
         </column>
     </columns>
     <listingToolbar name="listing_top">
-        <buttons>
-            <button name="export_csv">
-                <settings>
-                    <title translate="true">Export to CSV</title>
-                    <url path="exportproduct/export/csv"/>
-                    <class>primary</class>
-                </settings>
-            </button>
-            <button name="export_excel">
-                <settings>
-                    <title translate="true">Export to Excel</title>
-                    <url path="exportproduct/export/excel"/>
-                    <class>primary</class>
-                </settings>
-            </button>
-        </buttons>
+        <massaction name="listing_massaction">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="actions" xsi:type="array">
+                        <item name="export_csv" xsi:type="array">
+                            <item name="type" xsi:type="string">export_csv</item>
+                            <item name="label" xsi:type="string" translate="true">Export to CSV</item>
+                            <item name="url" xsi:type="url" path="exportproduct/export/csv"/>
+                            <item name="confirm" xsi:type="array">
+                                <item name="title" xsi:type="string" translate="true">Export to CSV</item>
+                                <item name="message" xsi:type="string" translate="true">Are you sure you want to export to CSV?</item>
+                            </item>
+                        </item>
+                        <item name="export_excel" xsi:type="array">
+                            <item name="type" xsi:type="string">export_excel</item>
+                            <item name="label" xsi:type="string" translate="true">Export to Excel</item>
+                            <item name="url" xsi:type="url" path="exportproduct/export/excel"/>
+                            <item name="confirm" xsi:type="array">
+                                <item name="title" xsi:type="string" translate="true">Export to Excel</item>
+                                <item name="message" xsi:type="string" translate="true">Are you sure you want to export to Excel?</item>
+                            </item>
+                        </item>
+                    </item>
+                </item>
+            </argument>
+        </massaction>
     </listingToolbar>
 </listing>
